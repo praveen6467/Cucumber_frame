@@ -11,8 +11,10 @@ Scenario: User logs in with valid credentials
 
 #  Keep it in configure file  -->  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login   
 # --> NAvigate Method should be in BASEPAGE only for Good Practice 
-@Frame
-Scenario:  switch to frame 
-Given  User switch to frame2
-When user send some message in text
-And User comeback from frame2
+ #@Frame
+#Scenario:  switch to frame 
+#Given  User switch to frame2
+#When user send some message in text
+#And User comeback from frame2
+
+

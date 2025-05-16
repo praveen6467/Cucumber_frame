@@ -56,7 +56,7 @@ public class BaseClass {
  			//browser
 			 switch (browser) {
              case "chrome":
-                 capabilities.setBrowserName("chrome");
+                 capabilities.setBrowserName("chrome"); // .setBrowserVersion("window11")  
                  break;
              case "edge":
                  capabilities.setBrowserName("MicrosoftEdge");
