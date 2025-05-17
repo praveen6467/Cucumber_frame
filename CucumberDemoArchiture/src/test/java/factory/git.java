@@ -8,7 +8,7 @@ public class git {
 		System.out.println("p");
 
 		
-		System.out.println("comment wrote in github")
+		System.out.println("comment wrote in github");
 
 	}
 

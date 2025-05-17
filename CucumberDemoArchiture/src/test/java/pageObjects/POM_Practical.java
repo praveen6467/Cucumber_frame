@@ -65,6 +65,19 @@ public class POM_Practical extends BasePage  {
 	   {
 		   LoginBtn.click();
 	   }
+	  
+//   Display the my Account Label
+	   
+ @FindBy(xpath="//div[@id='content']/h2[normalize-space()='My Account']") WebElement MyAccoutText;
+	   
+	
+ public String GetText()
+ {
+	
+	return   MyAccoutText.getText();
+ }
+	   
+	   
 	   
 	   
 //-------------Frame Performed in POM with driver ----------------------------------

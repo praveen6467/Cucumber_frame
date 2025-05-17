@@ -28,7 +28,7 @@ public class RegistrationSteps {
     	hp.clickMyAccount();
         hp.clickRegister();
          
-        
+          
 	}
 
 	@When("the user enters the details into below fields")  

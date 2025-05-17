@@ -29,7 +29,7 @@ public class DataReader {
 				Row currentRow = sheet.getRow(i);
 				HashMap<String, String> currentHash = new HashMap<String, String>();
 				for (int j = 0; j < currentRow.getPhysicalNumberOfCells(); j++) 
-					{
+			  		{
 					Cell currentCell = currentRow.getCell(j);
 					switch (currentCell.getCellType()) 
 						{

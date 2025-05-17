@@ -48,7 +48,12 @@ public class AccountRegistrationPage extends BasePage {
 				txtFirstname.sendKeys(fname);
 
 			}
+			public void setFirstNameClear() {
+				txtFirstname.clear();
 
+			}
+			
+			
 			public void setLastName(String lname) {
 				txtLasttname.sendKeys(lname);
 
