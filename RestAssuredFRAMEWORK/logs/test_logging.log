@@ -1,0 +1,43 @@
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Sleek Aluminum Lamp",
+    "price": 7.55,
+    "description": "Dolor eos non quos est ad.",
+    "image": "http://lorempixel.com/g/1366/768/city/",
+    "category": "books"
+}
+HTTP/1.1 200 OK
+Date: Wed, 30 Jul 2025 10:35:28 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Etag: W/"a3-opyTInfMva8Zu1SwFrSUYjrHLc8"
+X-Powered-By: Express
+Cf-Cache-Status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YPxy1x43fIPfHhcm%2FKPBXwc0rjmwOt%2FVbAyBDr80Vm66X3%2FufU3HVIhnTmUzNq7%2B0iNOeGoxX51kQC5GFR0VOjaSgND9yIXdyOBXH5W38%2Bo%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 967435a09b2e9d73-MAA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Sleek Aluminum Lamp",
+    "price": 7.55,
+    "description": "Dolor eos non quos est ad.",
+    "image": "http://lorempixel.com/g/1366/768/city/",
+    "category": "books"
+}
