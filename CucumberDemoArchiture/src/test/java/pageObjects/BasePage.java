@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,7 +43,56 @@ public class BasePage {
 	        element.click();
 	    }
 	   
-	   
+	    
+	    // Alert
+	  
+	   public void waitForAlert() {
+	        wait.until(ExpectedConditions.alertIsPresent());
+	    }
+
+	    public void acceptAlert() {
+	        waitForAlert();
+	        Alert alert = driver.switchTo().alert();
+	        alert.accept();
+	    }
+
+	    public void dismissAlert() {
+	        waitForAlert();
+	        Alert alert = driver.switchTo().alert();
+	        alert.dismiss();
+	    }
+
+	    public String getAlertText() {
+	        waitForAlert();
+	        Alert alert = driver.switchTo().alert();
+	        return alert.getText();
+	    }
+
+	    public void sendKeysToAlert(String text) {
+	        waitForAlert();
+	        Alert alert = driver.switchTo().alert();
+	        alert.sendKeys(text);
+	        alert.accept();
+	    }
 	    
 	   
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

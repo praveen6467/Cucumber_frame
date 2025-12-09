@@ -22,7 +22,7 @@ import utilities.DataReader;
 
 public class LoginSteps {
 
-	
+
 	
 	 WebDriver driver;         // ****** Here it works without 'webdriver driver' also , You may also WRITE it doesnot Affect Anything
      HomePage hp;
@@ -65,7 +65,7 @@ public class LoginSteps {
     }
 
 
-    @Then("the user should be redirected to the MyAccount Page")
+    @Then("the user should be redirected to the MyAccount Page")      //  **** Assertion Performed of MyAccountPageClass 
     public void user_navigates_to_my_account_page() {
     	macc=new MyAccountPage(BaseClass.getDriver());
 		boolean targetpage=macc.isMyAccountPageExists();
@@ -77,8 +77,8 @@ public class LoginSteps {
     // This Global Varable
     List<HashMap<String, String>> datamap; //Data driven
     
-    //*******   Data Driven test **************
-    @Then("the user should be redirected to the MyAccount Page by passing email and password with excel row {string}")
+            //*******   Data Driven test **************
+ //   @Then("the user should be redirected to the MyAccount Page by passing email and password with excel row {string}")
     public void check_user_navigates_to_my_account_page_by_passing_email_and_password_with_excel_data(String rows) throws IOException
     {
         datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\TestData.xlsx", "Sheet1");

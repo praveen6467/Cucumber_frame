@@ -25,7 +25,7 @@ public class MyAccountPage extends BasePage  {
 	public boolean isMyAccountPageExists()   // MyAccount Page heading display status
 	{
 		try {
-			return (msgHeading.isDisplayed());
+			return (msgHeading.isDisplayed());     //  **** Assertion Performed of MyAccountPageClass in LoginStep StepDefination 
 		} catch (Exception e) {
 			return (false);
 		}

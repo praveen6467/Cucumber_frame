@@ -67,7 +67,7 @@ public class RegistrationSteps {
 //		Assert.assertEquals(confmsg, "Your Account Has Been Created!");
 //		}
 
-	@Then("the user account should get created successfully")
+	@Then("the user account should get created successfully")   
 	public void user_account_should_get_created_successfully() throws InterruptedException {
 		
 		Thread.sleep(3000);

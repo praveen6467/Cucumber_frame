@@ -11,8 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		
 		
-	        	features= {".//Features/Excel.feature"},
-	           //    	features= {".//Features/Z_PRACTICAL.feature"},
+	        	//features= {".//Features/Excel.feature"},
+	             	features= {".//Features/Z_PRACTICAL.feature"},
 					//features= {".//Features/Login.feature"},
 				//	 features= {".//Features/asList.feature"},
 				//	features= {".//Features/Registration.feature"},
@@ -24,7 +24,7 @@ import io.cucumber.junit.CucumberOptions;
 					plugin= {
 								"pretty", "html:reports/myreport.html",   
 								"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-								"rerun:target/rerun.txt",    // This method need to Available all the time while executing the runner file
+								"rerun:target/rerun.txt",    //***  This method need to Available all the time while executing the runner file
 							
 							},
 							
